@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 24px;
+}
+main {
+  margin-top: 4rem;
+}
+.employees {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+.employees article {
+  background-color: #ececec;
+  padding: 20px;
+  min-width: 300px;
+  margin: 10px;
+  width: 25%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+article img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+.employee-info {
+  margin-top: 15px;
+}
+.employee-info span {
+  color: pink;
+}
+.active-employee {
+  border: 2px solid black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+form {
+  padding: 20px;
+}
+select {
+  width: 100%;
+  max-width: 800px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  display: block;
+  margin: auto;
+}
+footer {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+.error h1 {
+  font-size: 36px;
+}
+
+ul {
+  text-align: center;
+  margin-bottom: 20px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  font-size: 24px;
+}
+li a {
+  padding: 0 15px;
+  text-decoration: none;
+}
+.group-section {
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 550px;
+  margin: 15px auto;
+}
+.group {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.grouped-team {
+  max-width: 800px;
+  margin: auto;
+}
+.title,
+.member {
+  padding: 1rem 1.5rem;
+  border: 2px solid #eae6eb;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.member {
+  margin: 20px 0;
+  text-align: center;
+}

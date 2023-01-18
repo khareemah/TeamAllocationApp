@@ -1,0 +1,30 @@
+const { id, fullName, designation, gender, teamName } = employee;
+
+<article key={id}>
+    <img src={gender==="female" ? femaleProfile : maleProfile} alt="" />
+    <div className="employee-info">
+        <p>
+            <span>Name</span>: {fullName}
+        </p>
+        <p>
+            <span>Designation</span>: {designation}
+        </p>
+    </div>
+</article>
+);
+})}
+
+// const handleCardClick = (id) => {
+// const newEmployee = employees.map((employee) => {
+// if (employee.id === parseInt(id)) {
+// if (employee.teamName === activeTeam) {
+// employee.teamName = "";
+// } else {
+// employee.teamName = activeTeam;
+// }
+// }
+// return employee;
+// });
+// setEmployees(newEmployee);
+// localStorage.setItem("employees", JSON.stringify(employees));
+// };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Employees from "./pages/Employees";
 import Form from "./components/Form";
 import Nav from "./Nav";
@@ -9,13 +9,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Header from "./components/Header";
 import Footer from "./Footer";
-import people from "./data";
 
 function App() {
-  const [employees, setEmployees] = useState(
-    JSON.parse(localStorage.getItem("employees")) || people
-  );
-
   // useEffect(() => {
   //   localStorage.setItem("activeTeam", activeTeam);
   // }, [activeTeam]);

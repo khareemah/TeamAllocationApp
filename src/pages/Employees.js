@@ -5,7 +5,7 @@ import { useGlobalContext } from "../context";
 const Employees = () => {
   const { employees } = useGlobalContext();
   return (
-    <section className="employees">
+    <section className="section-center">
       {employees.map((employee) => {
         return <SingleEmployee {...employee} key={employee.id} />;
       })}

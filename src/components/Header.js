@@ -6,11 +6,11 @@ const Header = () => {
 
   return (
     <>
-      <h1>Team Allocation</h1>
-      <h3>
+      <h3>Team Allocation</h3>
+      <h4>
         {activeTeam} has {teamCount.length} team{" "}
         {teamCount > 1 ? "memebers" : "member"}
-      </h3>
+      </h4>
     </>
   );
 };

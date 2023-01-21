@@ -5,7 +5,7 @@ const Team = ({ members }) => {
     <article>
       {members.map((member) => {
         return (
-          <div key={member.id} className="member">
+          <div key={member.id} className="team-members">
             <p>{member.fullName}</p>
             <p>{member.designation}</p>
           </div>

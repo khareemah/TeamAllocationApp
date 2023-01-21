@@ -9,21 +9,20 @@ const SingleEmployee = ({ fullName, designation, gender, teamName, id }) => {
     <article
       onClick={() => handleCardClick(id)}
       className={
-        activeTeam === teamName ? "employee active-employee" : "employee"
+        activeTeam === teamName
+          ? "single-employee active-employee"
+          : "single-employee"
       }
     >
       <img
         src={gender === "female" ? femaleProfile : maleProfile}
         alt={fullName}
+        className="img"
       />
-      <div className="employee-info">
-        <p>
-          <span>Name</span>: {fullName}
-        </p>
-        <p>
-          <span>Designation</span>: {designation}
-        </p>
-      </div>
+      <footer>
+        <h5>{fullName}</h5>
+        <h5>{designation}</h5>
+      </footer>
     </article>
   );
 };

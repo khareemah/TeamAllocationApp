@@ -16,10 +16,12 @@ const GroupedTeamMembers = () => {
   }
 
   return (
-    <main className="grouped-team">
-      {groupTeams().map((group, index) => {
-        return <SingleGroup key={index} {...group} />;
-      })}
+    <main>
+      <section className="section-center grouped-team">
+        {groupTeams().map((group, index) => {
+          return <SingleGroup key={index} {...group} />;
+        })}
+      </section>
     </main>
   );
 };

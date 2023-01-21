@@ -10,12 +10,12 @@ const SingleGroup = ({ team, members }) => {
     setActiveTeam(e.currentTarget.textContent);
   }
   return (
-    <div>
-      <h1 onClick={handleteamClick} className="title">
+    <article className="single-group">
+      <h4 onClick={handleteamClick} className="title">
         {team}
-      </h1>
+      </h4>
       <>{showInfo && <Team members={members} />}</>
-    </div>
+    </article>
   );
 };
 
